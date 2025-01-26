@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Powfu Gallery</title>
+    <style>
+        header{
+            margin-top:30px;
+            margin-left: 30px;
+        }header a{
+            background-color: white;
+            padding: 5px;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #180b27;
+        }
+        .gallery-container {
+            width: 80%;
+            margin: 0 auto;
+            padding-top: 50px;
+            text-align: center;
+        }
+        h1 {
+            font-size: 36px;
+            color: #f8eeff;
+            margin-bottom: 30px;
+            text-shadow:-2.5px 2.5px 2px rgb(127, 7, 186);
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            justify-items: center;
+        }
+        .gallery img {
+            width: 100%;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+        .gallery-item {
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <header><a href="index.html" >Back</a></header>
+
+    <div class="gallery-container">
+        <h1>Powfu Image Gallery</h1>
+
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="img1.jpg" alt="Concert Image 1" style="border:3px solid rgb(160, 52, 255)">
+            </div>
+            <div class="gallery-item">
+                <img src="img2.jpg" alt="Concert Image 2" style="border:3px solid rgb(160, 52, 255)">
+            </div>
+            <div class="gallery-item">
+                <img src="img4.jpg" alt="Concert Image 4" style="border:3px solid rgb(160, 52, 255)">
+            </div>
+            <div class="gallery-item">
+                <img src="img5.jpg" alt="Concert Image 5" style="border:3px solid rgb(160, 52, 255)">
+            </div>
+            <div class="gallery-item">
+                <img src="img6.jpg" alt="Concert Image 6" style="border:3px solid rgb(160, 52, 255)">
+            </div>
+            <div class="gallery-item">
+                <img src="img8.jpeg" alt="Concert Image 6" style="border:3px solid rgb(160, 52, 255)">
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
